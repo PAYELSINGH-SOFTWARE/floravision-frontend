@@ -116,10 +116,4 @@ Open in VS Code:
 code .
 ```
 
-Run using Live Server or open `index.html`.
-
----
-
-
-
-This project is developed for educational and frontend assessment purposes only.
+Run using Live Server or open `index.html'
