@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Floravision</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#081108;
+      overflow-x:hidden;
+    }
+
+    .glass{
+      background:rgba(255,255,255,0.05);
+      backdrop-filter:blur(15px);
+      border:1px solid rgba(255,255,255,0.08);
+      box-shadow:0 8px 32px rgba(0,0,0,0.45);
+    }
+
+    .hero-bg{
+      background-image:
+      linear-gradient(to bottom,rgba(0,0,0,.7),rgba(0,0,0,.6)),
+      url('https://images.unsplash.com/photo-1483794344563-d27a8d18014e?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+    }
+
+    .green-glow{
+      box-shadow:0 0 120px rgba(63,255,110,0.15);
+    }
+  </style>
+</head>
+
+<body class="text-white">
+
+<!-- MAIN CONTAINER -->
+<div class="max-w-[1440px] mx-auto">
+
+  <!-- NAVBAR -->
+  <nav class="w-full px-10 py-6 flex items-center justify-between absolute top-0 z-50">
+
+    <div class="flex items-center gap-2">
+      <div class="w-8 h-8 rounded-full bg-green-400"></div>
+      <h1 class="font-semibold text-xl">FloraVision.</h1>
+    </div>
+
+    <div class="hidden md:flex items-center gap-10 text-sm text-gray-300">
+      <a href="#">Home</a>
+      <a href="#">Plants Type</a>
+      <a href="#">More</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="flex items-center gap-5 text-sm">
+      <span>🔍</span>
+      <span>🛒</span>
+      <span>☰</span>
+    </div>
+
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-bg min-h-screen relative overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-6 pt-40 pb-24 grid lg:grid-cols-2 gap-10 items-center">
+
+      <!-- LEFT -->
+      <div>
+
+        <h1 class="text-6xl md:text-7xl font-bold leading-tight">
+          Earth’s Exhale
+        </h1>
+
+        <p class="mt-5 text-gray-300 max-w-lg leading-relaxed">
+          “Earth breathes through plants.”
+          Transform your home with modern indoor greenery and premium decorative plants.
+        </p>
+
+        <div class="mt-8 flex gap-4">
+
+          <button class="px-7 py-3 rounded-full bg-white text-black font-medium hover:scale-105 transition">
+            Buy Now
+          </button>
+
+          <button class="px-7 py-3 rounded-full border border-white hover:bg-white hover:text-black transition">
+            See More
+          </button>
+
+        </div>
+
+        <!-- REVIEW -->
+        <div class="glass mt-10 rounded-3xl p-4 max-w-xs">
+
+          <div class="flex items-center gap-3">
+
+            <img
+              src="https://randomuser.me/api/portraits/women/65.jpg"
+              class="w-12 h-12 rounded-full object-cover"
+            />
+
+            <div>
+              <h3 class="font-semibold">Nature Heart</h3>
+              <p class="text-yellow-400 text-sm">
+                ★★★★★
+              </p>
+            </div>
+
+          </div>
+
+          <p class="mt-3 text-sm text-gray-300 leading-relaxed">
+            Best indoor plants collection with elegant modern styling.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT CARD -->
+      <div class="relative flex justify-center">
+
+        <div class="glass rounded-[40px] p-6 w-[320px] green-glow">
+
+          <img
+            src="https://images.unsplash.com/photo-1463936575829-25148e1db1b8?q=80&w=1000&auto=format&fit=crop"
+            class="w-full h-[420px] object-cover rounded-[30px]"
+          />
+
+          <div class="mt-5 flex items-center justify-between">
+
+            <div>
+              <p class="text-sm text-gray-400">
+                Air Purifier
+              </p>
+
+              <h3 class="text-2xl font-semibold">
+                Aglaonema plant
+              </h3>
+            </div>
+
+            <button class="border border-white px-5 py-2 rounded-full hover:bg-white hover:text-black transition">
+              Buy Now
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- TRENDY PLANTS -->
+  <section class="py-24 px-6">
+
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-semibold">
+        Our Trendy plants
+      </h2>
+    </div>
+
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+
+      <!-- CARD -->
+      <div class="glass rounded-[40px] p-8 flex flex-col md:flex-row items-center gap-8">
+
+        <img
+          src="https://images.unsplash.com/photo-1512428813834-c702c7702b78?q=80&w=1000&auto=format&fit=crop"
+          class="w-52 h-52 object-cover rounded-full"
+        />
+
+        <div>
+
+          <h3 class="text-2xl font-semibold">
+            For Your Desk Decorations
+          </h3>
+
+          <p class="text-gray-300 mt-4 leading-relaxed">
+            Trendy indoor decorative plant for workspaces and home interiors.
+          </p>
+
+          <p class="mt-5 text-3xl font-semibold">
+            Rs. 599/-
+          </p>
+
+          <button class="mt-5 px-6 py-2 rounded-full border border-white hover:bg-white hover:text-black transition">
+            Explore
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="glass rounded-[40px] p-8 flex flex-col md:flex-row items-center gap-8">
+
+        <img
+          src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1000&auto=format&fit=crop"
+          class="w-52 h-52 object-cover rounded-full"
+        />
+
+        <div>
+
+          <h3 class="text-2xl font-semibold">
+            For Your Desk Decorations
+          </h3>
+
+          <p class="text-gray-300 mt-4 leading-relaxed">
+            Minimal indoor plant with aesthetic ceramic pot design.
+          </p>
+
+          <p class="mt-5 text-3xl font-semibold">
+            Rs. 399/-
+          </p>
+
+          <button class="mt-5 px-6 py-2 rounded-full border border-white hover:bg-white hover:text-black transition">
+            Explore
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- TOP SELLING -->
+  <section class="py-20 px-6">
+
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-semibold">
+        Our Top Selling Plants
+      </h2>
+    </div>
+
+    <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- PRODUCT -->
+      <div class="glass rounded-[35px] p-6 hover:scale-105 transition">
+
+        <img
+          src="https://images.unsplash.com/photo-1545241047-6083a3684587?q=80&w=1000&auto=format&fit=crop"
+          class="w-full h-72 object-cover rounded-3xl"
+        />
+
+        <h3 class="mt-5 text-2xl font-semibold">
+          Aglaonema plant
+        </h3>
+
+        <p class="mt-3 text-gray-300">
+          Decorative indoor plant
+        </p>
+
+        <p class="mt-4 text-2xl font-semibold">
+          Rs. 300/-
+        </p>
+
+      </div>
+
+      <!-- PRODUCT -->
+      <div class="glass rounded-[35px] p-6 hover:scale-105 transition">
+
+        <img
+          src="https://images.unsplash.com/photo-1512428813834-c702c7702b78?q=80&w=1000&auto=format&fit=crop"
+          class="w-full h-72 object-cover rounded-3xl"
+        />
+
+        <h3 class="mt-5 text-2xl font-semibold">
+          Plantain Lilies
+        </h3>
+
+        <p class="mt-3 text-gray-300">
+          Fresh green indoor plant
+        </p>
+
+        <p class="mt-4 text-2xl font-semibold">
+          Rs. 380/-
+        </p>
+
+      </div>
+
+      <!-- PRODUCT -->
+      <div class="glass rounded-[35px] p-6 hover:scale-105 transition">
+
+        <img
+          src="https://images.unsplash.com/photo-1459156212016-c812468e2115?q=80&w=1000&auto=format&fit=crop"
+          class="w-full h-72 object-cover rounded-3xl"
+        />
+
+        <h3 class="mt-5 text-2xl font-semibold">
+          Cactus
+        </h3>
+
+        <p class="mt-3 text-gray-300">
+          Minimal decorative cactus
+        </p>
+
+        <p class="mt-4 text-2xl font-semibold">
+          Rs. 250/-
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="py-24 px-6">
+
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-semibold">
+        Customer Review
+      </h2>
+    </div>
+
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+
+      <!-- REVIEW -->
+      <div class="glass rounded-[35px] p-8">
+
+        <div class="flex items-center gap-4">
+
+          <img
+            src="https://randomuser.me/api/portraits/women/65.jpg"
+            class="w-14 h-14 rounded-full"
+          />
+
+          <div>
+            <h3 class="font-semibold text-xl">
+              Shelly Russel
+            </h3>
+
+            <p class="text-yellow-400">
+              ★★★★★
+            </p>
+          </div>
+
+        </div>
+
+        <p class="mt-6 text-gray-300 leading-relaxed">
+          Amazing indoor plants with elegant packaging and excellent quality.
+        </p>
+
+      </div>
+
+      <!-- REVIEW -->
+      <div class="glass rounded-[35px] p-8">
+
+        <div class="flex items-center gap-4">
+
+          <img
+            src="https://randomuser.me/api/portraits/men/32.jpg"
+            class="w-14 h-14 rounded-full"
+          />
+
+          <div>
+            <h3 class="font-semibold text-xl">
+              Luka Rollson
+            </h3>
+
+            <p class="text-yellow-400">
+              ★★★★★
+            </p>
+          </div>
+
+        </div>
+
+        <p class="mt-6 text-gray-300 leading-relaxed">
+          The modern UI and smooth experience look absolutely premium.
+        </p>
+
+      </div>
+
+      <!-- REVIEW -->
+      <div class="glass rounded-[35px] p-8">
+
+        <div class="flex items-center gap-4">
+
+          <img
+            src="https://randomuser.me/api/portraits/men/41.jpg"
+            class="w-14 h-14 rounded-full"
+          />
+
+          <div>
+            <h3 class="font-semibold text-xl">
+              Carol Huels
+            </h3>
+
+            <p class="text-yellow-400">
+              ★★★★★
+            </p>
+          </div>
+
+        </div>
+
+        <p class="mt-6 text-gray-300 leading-relaxed">
+          Beautiful aesthetic with modern glassmorphism cards and layout.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- O2 SECTION -->
+  <section class="py-24 px-6">
+
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-semibold">
+        Our Best O2
+      </h2>
+    </div>
+
+    <div class="max-w-6xl mx-auto glass rounded-[50px] p-10 grid lg:grid-cols-2 gap-12 items-center">
+
+      <img
+        src="https://images.unsplash.com/photo-1463936575829-25148e1db1b8?q=80&w=1000&auto=format&fit=crop"
+        class="w-full rounded-[40px]"
+      />
+
+      <div>
+
+        <h2 class="text-5xl font-bold leading-tight">
+          We Have Small And Best O2 Plants Collections
+        </h2>
+
+        <p class="mt-6 text-gray-300 leading-relaxed">
+          Oxygen-producing plants release oxygen into the environment and create a healthier atmosphere for your living space.
+        </p>
+
+        <button class="mt-8 px-8 py-3 rounded-full bg-white text-black font-medium hover:scale-105 transition">
+          Explore
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-16 border-t border-white/10">
+
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+
+      <div>
+
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 bg-green-400 rounded-full"></div>
+          <h2 class="text-2xl font-semibold">
+            FloraVision.
+          </h2>
+        </div>
+
+        <p class="mt-5 text-gray-400 leading-relaxed">
+          Premium indoor plants and decorative greenery for modern homes.
+        </p>
+
+      </div>
+
+      <div>
+
+        <h3 class="font-semibold text-xl mb-5">
+          Quick Links
+        </h3>
+
+        <ul class="space-y-3 text-gray-400">
+          <li>Home</li>
+          <li>Plants</li>
+          <li>Contact</li>
+          <li>Privacy</li>
+        </ul>
+
+      </div>
+
+      <div>
+
+        <h3 class="font-semibold text-xl mb-5">
+          For Every Updates.
+        </h3>
+
+        <div class="flex overflow-hidden rounded-full border border-white/20">
+
+          <input
+            type="email"
+            placeholder="Enter Email"
+            class="bg-transparent px-5 py-3 w-full outline-none"
+          />
+
+          <button class="bg-white text-black px-6 font-medium">
+            SUBSCRIBE
+          </button>
+
+        </div>
+
+      </div>
+
+      <div>
+
+        <h3 class="font-semibold text-xl mb-5">
+          Socials
+        </h3>
+
+        <div class="flex gap-4 text-2xl">
+          <span>FB</span>
+          <span>TW</span>
+          <span>LI</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</div>
+
+</body>
+</html>
